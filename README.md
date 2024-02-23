@@ -1,2 +1,13 @@
-# mhsendur.github.io
-Personal website showcasing my projects, skills and experience.
+# Mustafa Harun Sendur's Personal Website
+
+## Introduction
+Personal website encompassing personal experience, activities, projects and skills. Designed and built by Mustafa Harun Sendur.
+
+## Technology Stack
+- HTML/CSS/JavaScript
+- React
+
+## Features
+- Personal description section
+- Portfolio showcasing personal experience, projects & skills
+- Contact section
