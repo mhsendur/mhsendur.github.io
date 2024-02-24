@@ -195,31 +195,32 @@ footer .footer-bottom {
 
 
 @media (max-width: 768px) {
-  .container {
-    padding: 0 15px; 
-  }
-
-  header nav ul li {
-    font-size: 12px; 
+  header {
+    padding: 5px 0; 
   }
 
   header img {
-    height: 50px !important;
+    height: 40px; 
+  }
+
+  header nav ul li {
+    margin: 0 5px; /* Adjusted spacing between nav items */
+    font-size: 12px; 
   }
 }
 
 @media (max-width: 480px) {
   header {
-    padding: 10px 0; 
+    padding: 5px 0; /* Maintain smaller padding for very small screens */
   }
 
   header nav ul li {
-    margin: 5px; 
-    font-size: 12px; /* Ensure text remains legible */
+    margin: 0 3px; 
+    font-size: 11px; 
   }
 
-  section {
-    padding: 20px 10px; /* Adjusted section padding */
+  header img {
+    height: 35px; 
   }
 }
 
