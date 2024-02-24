@@ -12,6 +12,12 @@ header img {
   height: 85px; 
 }
 
+nav ul li:last-child {
+  padding-right: 60px;
+  margin-right: 0;
+}
+
+
 .container {
   width: 1280px;
   margin: auto;
