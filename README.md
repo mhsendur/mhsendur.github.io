@@ -4,8 +4,7 @@
 Personal website encompassing personal experience, activities, projects and skills. Designed and built by Mustafa Harun Sendur.
 
 ## Technology Stack
-- HTML/CSS/JavaScript
-- React
+- HTML & CSS
 
 ## Features
 - Personal description section
