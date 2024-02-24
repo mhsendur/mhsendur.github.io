@@ -21,4 +21,6 @@ Design of the footer section displayed.
 <img width="1728" alt="Screenshot 2024-02-24 at 14 11 17" src="https://github.com/mhsendur/mhsendur.github.io/assets/120842010/711b38d4-9bc6-4a6d-8106-1a6c9fac36d2">
 
 ## Suitable for Mobile Usage
+
+Suitable design for mobile usage of the website displayed. Responsive web design across various devices.
 <img width="430" alt="Screenshot 2024-02-24 at 14 10 50" src="https://github.com/mhsendur/mhsendur.github.io/assets/120842010/e89374a1-141b-48b8-a4da-29b94f479cf0">
