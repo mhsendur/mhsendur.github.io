@@ -218,6 +218,34 @@ footer .footer-bottom {
       padding: 40px 10px;
   }
 }
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px; 
+  }
+
+  header nav ul li {
+    font-size: 12px; 
+  }
+
+  header img {
+    height: 50px; 
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 0; 
+  }
+
+  header nav ul li {
+    margin: 5px; 
+    font-size: 12px; /* Ensure text remains legible */
+  }
+
+  section {
+    padding: 20px 10px; /* Adjusted section padding */
+  }
+}
 
 #welcome {
   padding-top: 60px;
