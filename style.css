@@ -204,8 +204,13 @@ footer .footer-bottom {
   }
 
   header nav ul li {
-    margin: 0 5px; /* Adjusted spacing between nav items */
-    font-size: 12px; 
+    margin: 0 2px; /* Adjusted spacing between nav items */
+    font-size: 11px; 
+  }
+
+
+  header nav ul li a {
+    padding: 3px 5px; /* reduced padding for smaller screens */
   }
 }
 
