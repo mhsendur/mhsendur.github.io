@@ -8,6 +8,10 @@ body, html {
   line-height: 1.8;
 }
 
+header img {
+  height: 85px; 
+}
+
 .container {
   width: 1280px;
   margin: auto;
