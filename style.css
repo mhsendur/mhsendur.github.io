@@ -197,42 +197,6 @@ footer .footer-bottom {
   color: #aaa;
 }
 
-
-@media (max-width: 768px) {
-  header {
-    padding: 5px 0; 
-  }
-
-  header img {
-    height: 40px; 
-  }
-
-  header nav ul li {
-    margin: 0 2px; /* Adjusted spacing between nav items */
-    font-size: 11px; 
-  }
-
-
-  header nav ul li a {
-    padding: 3px 5px; /* reduced padding for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    padding: 5px 0; /* Maintain smaller padding for very small screens */
-  }
-
-  header nav ul li {
-    margin: 0 3px; 
-    font-size: 11px; 
-  }
-
-  header img {
-    height: 35px; 
-  }
-}
-
 #welcome {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -247,4 +211,127 @@ footer .footer-bottom {
 #welcome p {
   font-size: 1.15em;
   color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav ul li:last-child {
+    margin-bottom: 25px;
+  }
+
+  .container, section {
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  header, footer, header .container, footer .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 15px;
+  }
+
+  footer .footer-content, footer .footer-bottom {
+    padding: 10px 0;
+  }
+
+  footer .footer-content p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  footer ul li {
+    margin: 5px 10px;
+  }
+
+  footer .footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  header img {
+    height: 60px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  section h2, .experience-entry h3, .project-entry h3, .activity-entry h3, .skills-entry h3 {
+    font-size: 20px;
+  }
+
+  .experience-entry, .project-entry, .activity-entry, .skills-entry {
+    padding: 20px;
+  }
+
+  #welcome h1 {
+    font-size: 2em;
+  }
+
+  #welcome p, .experience-entry p, .project-entry p, .activity-entry p, .skills-entry ul li {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  header nav ul li {
+    font-size: 20px;
+  }
+
+  section {
+    padding: 40px 30px;
+  }
+
+  header img {
+    height: 70px;
+  }
 }
