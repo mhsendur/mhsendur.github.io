@@ -327,6 +327,63 @@ footer .footer-bottom {
     font-size: 1em;
   }
 }
+/* Dark Mode Styles */
+body[data-theme="dark"], html[data-theme="dark"] {
+    color: #f9f9f9;
+    background-color: #121212;
+}
+
+header[data-theme="dark"] {
+    background: #1e1e1e;
+    color: #f9f9f9;
+}
+
+section[data-theme="dark"] {
+    background-color: #1e1e1e;
+    border-bottom: 3px solid #333;
+}
+
+.experience-entry[data-theme="dark"], .project-entry[data-theme="dark"], 
+.activity-entry[data-theme="dark"], .skills-entry[data-theme="dark"] {
+    background-color: #333;
+    color: #f9f9f9;
+    border: none;
+}
+
+header nav ul li a[data-theme="dark"] {
+    color: #f9f9f9;
+}
+
+header nav ul li a[data-theme="dark"]:hover, 
+header nav ul li a.current[data-theme="dark"] {
+    color: #bbb;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer[data-theme="dark"] {
+    background: #1e1e1e;
+    color: #f9f9f9;
+}
+
+footer ul li a[data-theme="dark"] {
+    color: #f9f9f9;
+}
+
+footer ul li a[data-theme="dark"]:hover {
+    color: #aaa;
+}
+
+#theme-toggle {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Invert logo for dark mode */
+[data-theme="dark"] header img {
+    filter: invert(1);
+}
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .container {
