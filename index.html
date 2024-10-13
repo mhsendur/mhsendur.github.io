@@ -228,10 +228,11 @@
 </footer>
     
 <script>
+    // Toggle dark mode
     const toggleButton = document.getElementById('theme-toggle');
-
     toggleButton.addEventListener('click', () => {
-        if (document.documentElement.getAttribute('data-theme') === 'dark') {
+        const isDarkMode = document.documentElement.hasAttribute('data-theme');
+        if (isDarkMode) {
             document.documentElement.removeAttribute('data-theme');
             toggleButton.textContent = 'Dark Mode';
         } else {
@@ -240,7 +241,6 @@
         }
     });
 </script>
-
 
 </body>
 </html>
