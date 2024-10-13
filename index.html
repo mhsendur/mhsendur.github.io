@@ -228,13 +228,19 @@
 </footer>
     
 <script>
-    // Toggle dark mode
     const toggleButton = document.getElementById('theme-toggle');
+
     toggleButton.addEventListener('click', () => {
-        document.documentElement.toggleAttribute('data-theme', 'dark');
-        toggleButton.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? 'Light Mode' : 'Dark Mode';
+        if (document.documentElement.getAttribute('data-theme') === 'dark') {
+            document.documentElement.removeAttribute('data-theme');
+            toggleButton.textContent = 'Dark Mode';
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            toggleButton.textContent = 'Light Mode';
+        }
     });
 </script>
+
 
 </body>
 </html>
