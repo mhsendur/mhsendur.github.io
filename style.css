@@ -1,3 +1,4 @@
+/* Light Mode Default */
 body, html {
   margin: 0;
   padding: 0;
@@ -8,20 +9,10 @@ body, html {
   line-height: 1.8;
 }
 
-header img {
-  height: 85px; 
-}
-
-nav ul li:last-child {
-  padding-right: 60px;
-  margin-right: 0;
-}
-
-
-.container {
-  width: 1280px;
-  margin: auto;
-  padding: 0 60px;
+/* Dark Mode Styles */
+body[data-theme="dark"], html[data-theme="dark"] {
+  color: #f9f9f9;
+  background-color: #121212;
 }
 
 header {
@@ -45,61 +36,14 @@ header::after {
   left: 0;
 }
 
-header h1 {
-  margin: 0;
-  text-align: left;
-  font-size: 28px;
-  font-weight: 600;
-  flex: 1;
-  color: #333;
+body[data-theme="dark"] header {
+  background: #1e1e1e;
+  color: #f9f9f9;
 }
 
-header nav {
-  text-align: right;
-  flex: 2;
-}
-
-header nav ul {
-  font-weight: 550;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-}
-
-header nav ul li {
-  font-size: 24px;
-  margin: 0 20px;
-}
-
-header nav ul li a {
-  color: #333;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  transition: color 0.3s ease-in-out;
-}
-
-header nav ul li a:hover,
-header nav ul li a.current {
-  color: #02066F;
-  font-weight: 750;
-  text-decoration: underline;
-  text-decoration-thickness: 0.15em;
-  text-underline-offset: 0.35em;
-}
-
-section {
-  padding: 60px 20px;
-  border-bottom: 3px solid #ecf0f1;
-}
-
-section h2 {
-  margin-bottom: 40px;
-  font-size: 26px;
-  color: #02066F;
-  font-weight: 550;
-  text-align: left;
+body[data-theme="dark"] section {
+  background-color: #1e1e1e;
+  border-bottom: 3px solid #333;
 }
 
 .experience-entry, .project-entry, .activity-entry, .skills-entry {
@@ -109,25 +53,47 @@ section h2 {
   border: none;
 }
 
-.project-entry a {
-  color: #02066F;
+body[data-theme="dark"] .experience-entry,
+body[data-theme="dark"] .project-entry,
+body[data-theme="dark"] .activity-entry,
+body[data-theme="dark"] .skills-entry {
+  background-color: #333;
+  color: #f9f9f9;
+  border: none;
+}
+
+nav ul li a {
+  color: #333;
   text-decoration: none;
-  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: color 0.3s ease-in-out;
 }
 
-.project-entry a:hover {
+body[data-theme="dark"] nav ul li a {
+  color: #f9f9f9;
+}
+
+nav ul li a:hover,
+nav ul li a.current {
+  color: #02066F;
+  font-weight: 750;
   text-decoration: underline;
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.35em;
 }
 
-.project-entry a::after {
-  content: " \2022";
-  margin-left: 5px;
+body[data-theme="dark"] nav ul li a:hover,
+body[data-theme="dark"] nav ul li a.current {
+  color: #bbb;
 }
 
-.project-entry a:last-child::after {
-  content: "";
+/* Invert logo for dark mode */
+[data-theme="dark"] header img {
+  filter: invert(1);
 }
 
+/* Footer Dark Mode */
 footer {
   background: #000;
   color: #fff;
@@ -139,51 +105,9 @@ footer {
   letter-spacing: 1px;
 }
 
-footer::before {
-  content: '';
-  display: block;
-  height: 24px;
-  background-color: #02066F;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-footer .footer-content p {
-  margin-bottom: 20px;
-  font-size: 18px;
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-footer .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-footer .footer-content {
-  margin-bottom: 20px;
-}
-
-footer .footer-content p {
-  margin-bottom: 15px;
-  font-weight: 500;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-footer ul li {
-  display: inline-block;
-  margin: 0 10px;
+body[data-theme="dark"] footer {
+  background: #1e1e1e;
+  color: #f9f9f9;
 }
 
 footer ul li a {
@@ -193,213 +117,17 @@ footer ul li a {
   font-weight: 400;
 }
 
-footer ul li a:hover {
-  color: #3945b5;
-  text-decoration: underline;
+body[data-theme="dark"] footer ul li a {
+  color: #f9f9f9;
 }
 
-footer .footer-bottom {
-  font-size: 14px;
+body[data-theme="dark"] footer ul li a:hover {
   color: #aaa;
 }
 
-#welcome {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-#welcome h1 {
-  font-size: 2.5em;
-  color: #02066F;
-  margin-bottom: 20px;
-}
-
-#welcome p {
-  font-size: 1.15em;
-  color: #333;
-}
-
-@media only screen and (max-width: 600px) {
-  nav ul li:last-child {
-    padding-right: 0;
-    margin-right: 0;
-  }
-
-  header nav ul li:last-child {
-    margin-bottom: 25px;
-  }
-
-  .container, section {
-    width: 100%;
-    padding: 0 15px;
-    margin: auto;
-    box-sizing: border-box;
-  }
-
-  header, footer, header .container, footer .container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-  }
-
-  header nav ul li {
-    margin: 5px 0;
-  }
-
-  section {
-    padding: 30px 15px;
-  }
-
-  footer .container {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 20px 15px;
-  }
-
-  footer .footer-content, footer .footer-bottom {
-    padding: 10px 0;
-  }
-
-  footer .footer-content p {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-
-  footer ul li {
-    margin: 5px 10px;
-  }
-
-  footer .footer-bottom {
-    margin-top: 20px;
-    font-size: 12px;
-  }
-
-  .container {
-    width: 100%;
-    padding: 0 15px;
-    margin: auto;
-  }
-
-  header nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header nav ul li {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-
-  header img {
-    height: 60px;
-  }
-
-  section {
-    padding: 30px 15px;
-  }
-
-  section h2, .experience-entry h3, .project-entry h3, .activity-entry h3, .skills-entry h3 {
-    font-size: 20px;
-  }
-
-  .experience-entry, .project-entry, .activity-entry, .skills-entry {
-    padding: 20px;
-  }
-
-  #welcome h1 {
-    font-size: 2em;
-  }
-
-  #welcome p, .experience-entry p, .project-entry p, .activity-entry p, .skills-entry ul li {
-    font-size: 1em;
-  }
-}
-/* Dark Mode Styles */
-body[data-theme="dark"], html[data-theme="dark"] {
-    color: #f9f9f9;
-    background-color: #121212;
-}
-
-header[data-theme="dark"] {
-    background: #1e1e1e;
-    color: #f9f9f9;
-}
-
-section[data-theme="dark"] {
-    background-color: #1e1e1e;
-    border-bottom: 3px solid #333;
-}
-
-.experience-entry[data-theme="dark"], .project-entry[data-theme="dark"], 
-.activity-entry[data-theme="dark"], .skills-entry[data-theme="dark"] {
-    background-color: #333;
-    color: #f9f9f9;
-    border: none;
-}
-
-header nav ul li a[data-theme="dark"] {
-    color: #f9f9f9;
-}
-
-header nav ul li a[data-theme="dark"]:hover, 
-header nav ul li a.current[data-theme="dark"] {
-    color: #bbb;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-footer[data-theme="dark"] {
-    background: #1e1e1e;
-    color: #f9f9f9;
-}
-
-footer ul li a[data-theme="dark"] {
-    color: #f9f9f9;
-}
-
-footer ul li a[data-theme="dark"]:hover {
-    color: #aaa;
-}
-
+/* Button */
 #theme-toggle {
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Invert logo for dark mode */
-[data-theme="dark"] header img {
-    filter: invert(1);
-}
-
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-  .container {
-    width: 100%;
-    padding: 0 30px;
-  }
-
-  header nav ul li {
-    font-size: 20px;
-  }
-
-  section {
-    padding: 40px 30px;
-  }
-
-  header img {
-    height: 70px;
-  }
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
