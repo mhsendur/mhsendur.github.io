@@ -8,6 +8,8 @@
 </head>
 <body>
   <header>
+    <button id="theme-toggle" style="position: absolute; top: 20px; right: 20px;">Dark Mode</button>
+
     <div class="container">
         <img src="logo.png" alt="Mustafa Harun Sendur Logo">
     </div>
@@ -224,6 +226,15 @@
       </div>
   </div>
 </footer>
+    
+<script>
+    // Toggle dark mode
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', () => {
+        document.documentElement.toggleAttribute('data-theme', 'dark');
+        toggleButton.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? 'Light Mode' : 'Dark Mode';
+    });
+</script>
 
 </body>
 </html>
