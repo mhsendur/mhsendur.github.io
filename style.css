@@ -344,6 +344,10 @@ section h2::after {
   text-decoration: underline;
 }
 
+.project-entry, .experience-entry {
+  position: relative;  
+}
+
 .project-entry a::after {
   content: " \2022";
   margin-left: 5px;
