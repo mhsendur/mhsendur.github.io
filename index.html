@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <svg style="position: absolute; width: 0; height: 0;">
+    <defs>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" 
+                values="1 0 0 0 0  
+                        0 1 0 0 0  
+                        0 0 1 0 0  
+                        0 0 0 12 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+    </defs>
+</svg>
+
   <header>
     <div class="container">
         <img src="logo.png" alt="Mustafa Harun Sendur Logo">
@@ -26,9 +40,36 @@
 </header>
 
 
-    <section id="welcome" class="container" style="padding-top: 35px; padding-bottom: 35px;">
-    <h1 style="font-size: 1.75em;">Welcome.</h1>
-<p>My name is Mustafa Harun Sendur, and I am a Computer Science and Engineering graduate from Sabanci University. I have hands-on experience in software engineering, cloud infrastructure, and data science. I have built projects ranging from cloud-based dashboards on Azure to blockchain NFT marketplaces, and I am proficient in C, C++, Python, Java, JavaScript, and frameworks like React, Node.js, and Express.js. I am a committee member of the British Computer Society's London Central Branch, and I am passionate about building scalable, innovative software that solves real-world challenges.</p>
+    <section id="welcome" class="container">
+        <div class="welcome-content">
+            <div class="welcome-grid">
+                <div class="welcome-text">
+                    <h1>Welcome.</h1>
+                    <div class="highlight-bar"></div>
+                    <p>My name is Mustafa Harun Sendur, and I am a Computer Science and Engineering graduate from Sabanci University. I have hands-on experience in software engineering, cloud infrastructure, and data science.</p>
+                    <div class="expertise-tags">
+                        <span>Software Engineering</span>
+                        <span>Cloud Infrastructure</span>
+                        <span>Data Science</span>
+                    </div>
+                    <p>I have built projects ranging from cloud-based dashboards on Azure to blockchain NFT marketplaces, and I am proficient in C, C++, Python, Java, JavaScript, and frameworks like React, Node.js, and Express.js. I am a committee member of the British Computer Society's London Central Branch, and I am passionate about building scalable, innovative software that solves real-world challenges.</p>
+                </div>
+                <div class="welcome-visual">
+                    <div class="tech-sphere">
+                        <div class="lava-container">
+                            <div class="lava-blob"></div>
+                            <div class="lava-blob"></div>
+                            <div class="lava-blob"></div>
+                            <div class="lava-blob"></div>
+                            <div class="lava-blob"></div>
+                            <div class="lava-blob"></div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 <!-- Experience Section -->
@@ -37,6 +78,10 @@
 
 <!-- OneStream Software Experience -->
 <div class="experience-entry">
+    <div class="tech-tags-container">
+        <span class="tech-tag azure">Azure</span>
+        <span class="tech-tag kql">KQL</span>
+    </div>
     <h3>Cloud Operations Intern - OneStream Software</h3>
     <p>July 2024 – September 2024 | London, United Kingdom</p>
     <ul>
@@ -49,6 +94,10 @@
 
   <!-- TUBITAK Experience -->
   <div class="experience-entry">
+      <div class="tech-tags-container">
+          <span class="tech-tag solidity">Solidity</span>
+          <span class="tech-tag javascript">JavaScript</span>
+      </div>
       <h3>Intern at Blockchain Laboratory - TUBITAK</h3>
       <p>January 2023 – February 2023 | Kocaeli, Turkey</p>
       <ul>
@@ -61,6 +110,12 @@
   
   <!-- Vachell Experience -->
   <div class="experience-entry">
+      <div class="tech-tags-container">
+          <span class="tech-tag react">React</span>
+          <span class="tech-tag nodejs">Node.js</span>
+          <span class="tech-tag express">Express</span>
+          <span class="tech-tag mongodb">MongoDB</span>
+      </div>
       <h3>Founder & Full-Stack Engineer - Vachell</h3>
       <p>April 2022 – December 2023 | Istanbul, Turkey</p>
       <ul>
@@ -79,6 +134,9 @@
 
   <!-- Real Estate Recommender Twitter Bot Project -->
 <div class="project-entry">
+    <div class="tech-tags-container">
+        <span class="tech-tag python">Python</span>
+    </div>
     <h3>Real Estate Recommender Twitter Bot</h3>
     <p>Developed a Twitter bot that identifies and tweets high-value real estate properties in Istanbul, Turkey, by analysing approximately 45,000 listings using NLP and machine learning in Python.</p>
     <p><a href="https://github.com/mhsendur/RealEstateTweetBot" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
@@ -86,6 +144,12 @@
 
       <!-- PistachioHut – E-Commerce Platform Project -->
   <div class="project-entry">
+      <div class="tech-tags-container">
+          <span class="tech-tag python">Python</span>
+          <span class="tech-tag flask">Flask</span>
+          <span class="tech-tag react">React</span>
+          <span class="tech-tag firebase">Firebase</span>
+      </div>
       <h3>PistachioHut – E-Commerce Platform</h3>
       <p>Developed a full-stack e-commerce platform with React.js for the frontend and Flask for the backend as part of an agile team. The application allows users to browse products, purchase items, and manage their accounts through secure authentication. RESTful APIs were built using Flask and Firestore to facilitate seamless user authentication, product management, and order processing, ensuring a reliable and scalable shopping experience.</p>
       <p><a href="https://github.com/mhsendur/PistachioHut-OnlineStore" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
@@ -93,6 +157,9 @@
 
   <!-- Low-Latency Trading System Simulator Project -->
   <div class="project-entry">
+      <div class="tech-tags-container">
+          <span class="tech-tag cpp">C</span>
+      </div>
       <h3>Low-Latency Trading System Simulator</h3>
       <p>This simulation-based project replicates the core functionalities of a high-frequency trading engine. It processes mock market data, handles buy and sell orders, and matches them based on price and time priority. Designed for performance evaluation, the system offers insights into latency optimisation and operational efficiency without engaging in real financial transactions.</p>
       <p><a href="https://github.com/mhsendur/LowLatencyTradingSystem" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
@@ -100,6 +167,9 @@
 
   <!-- Real-Time Stock Price Tracker Project -->
   <div class="project-entry">
+      <div class="tech-tags-container">
+          <span class="tech-tag python">Python</span>
+      </div>
       <h3>Real-Time Stock Price Tracker</h3>
       <p>Developed a Python-based application that provides live updates of stock prices, price changes, and trends. Featuring a dynamic table for real-time data display, an interactive graph for visualising stock trends, and a search bar for managing tracked stocks, the project utilises tkinter for the GUI and yfinance to retrieve stock data.</p>
       <p><a href="https://github.com/mhsendur/StockPriceTracker" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
@@ -108,6 +178,9 @@
 
   <!-- ChatGPT Grade Predictor Project -->
   <div class="project-entry">
+      <div class="tech-tags-container">
+          <span class="tech-tag python">Python</span>
+      </div>
       <h3>ChatGPT Grade Predictor</h3>
       <p>Utilised user interaction data with ChatGPT to predict assignment grades through machine learning models. Implemented sentiment analysis and feature engineering techniques to analyse linguistic nuances and user engagement patterns.</p>
       <p><a href="https://github.com/mhsendur/ChatGPT-Grade-Predictor" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
@@ -115,6 +188,11 @@
   
   <!-- TurfMind Project -->
   <div class="project-entry">
+      <div class="tech-tags-container">
+          <span class="tech-tag python">Python</span>
+          <span class="tech-tag django">Django</span>
+          <span class="tech-tag javascript">JavaScript</span>
+      </div>
       <h3>TurfMind – Football Statistics Platform</h3>
       <p>Developed an analytical platform aggregating a decade's worth of football data from Europe's top leagues. The platform utilises Django REST Framework for backend operations and features interactive data visualisations using JavaScript and Charts.js.</p>
       <p><a href="https://github.com/mhsendur/TurfMind-football-stats-coaching" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
@@ -122,6 +200,12 @@
   
   <!-- DisasterPrep App Project -->
   <div class="project-entry">
+      <div class="tech-tags-container">
+          <span class="tech-tag java">Java</span>
+          <span class="tech-tag spring">Spring</span>
+          <span class="tech-tag docker">Docker</span>
+          <span class="tech-tag mongodb">MongoDB</span>
+      </div>
       <h3>DisasterPrep - Natural Disaster Preparedness App</h3>
       <p>Created a mobile application to educate users on natural disaster preparedness, featuring checklists, informational resources, and emergency contacts. Built using the Spring Framework, Java, Docker, and MongoDB for a full-stack experience.</p>
       <p><a href="https://github.com/mhsendur/DisasterPrep" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
@@ -129,6 +213,9 @@
   
   <!-- Comparative Education Index Predictor Project -->
   <div class="project-entry">
+      <div class="tech-tags-container">
+          <span class="tech-tag python">Python</span>
+      </div>
       <h3>Comparative Education Index Predictor</h3>
       <p>Engineered a machine learning model to predict education indices for Turkish provinces using Python, focusing on data collection, preprocessing, and visualisation. Achieved a high predictive accuracy with an R-squared value of 0.98.</p>
       <p><a href="https://github.com/mhsendur/Education-Index-in-Turkey-Before-and-After" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
@@ -136,6 +223,9 @@
 
   <!-- TSP-Solver Project -->
 <div class="project-entry">
+    <div class="tech-tags-container">
+        <span class="tech-tag cpp">C++</span>
+    </div>
     <h3>TSP-Solver</h3>
     <p>This program is a TSP (Traveling Salesman Problem) solver that uses the GRASP (Greedy Randomised Adaptive Search Procedure) algorithm with a Swap implementation. It calculates the shortest possible route that visits each city exactly once, aiming for optimisation in route finding.</p>
     <p><a href="https://github.com/mhsendur/TSP-Solver" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
@@ -143,6 +233,10 @@
 
 <!-- kAiDB Project -->
 <div class="project-entry">
+    <div class="tech-tags-container">
+        <span class="tech-tag python">Python</span>
+        <span class="tech-tag mongodb">MongoDB</span>
+    </div>
     <h3>kAiDB</h3>
     <p>kAiDB is a comprehensive database designed for the AI/ML Club of Sabanci University, aiming to streamline the management of user profiles, event scheduling, and more. It's a robust system enhancing the club's operations and member experience.</p>
     <p><a href="https://github.com/mhsendur/kAiDB" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
