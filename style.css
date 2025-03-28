@@ -1069,6 +1069,13 @@ footer .footer-bottom {
     justify-content: flex-end;
     max-width: 50%;
     z-index: 1;
+    opacity: 0;  /* Hide by default */
+    transition: opacity 0.3s ease;  /* Smooth transition */
+}
+
+.experience-entry:hover .tech-tags-container,
+.project-entry:hover .tech-tags-container {
+    opacity: 1;  /* Show on hover */
 }
 
 /* Simple hover effect */
