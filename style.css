@@ -1016,6 +1016,7 @@ footer .footer-bottom {
     border: 1px solid rgba(255, 255, 255, 0.2);
     letter-spacing: 0.5px;
     transition: all 0.2s ease;
+    background-color: var(--accent-color);
 }
 
 .tech-tag::before {
@@ -1042,6 +1043,8 @@ footer .footer-bottom {
 }
 
 /* Clean, solid colors */
+.tech-tag.typescript { background-color: #4B6BF5; }
+.tech-tag.sqlite { background-color: #2ECC71; }
 .tech-tag.python { background-color: #4B6BF5; }
 .tech-tag.javascript { background-color: #F5B041; }
 .tech-tag.react { background-color: #5DADE2; }
