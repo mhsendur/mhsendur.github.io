@@ -79,6 +79,25 @@ header {
     background-color: var(--header-bg);
 }
 
+/* Blurry (frosted glass) header */
+header {
+  background: rgba(250, 250, 250, 0.70); /* override var(--header-bg) to allow stronger blur */
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Dark theme header blur */
+[data-theme="dark"] header {
+  background: rgba(18, 18, 18, 0.70);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+header::after {
+  background-color: var(--accent-color);
+}
+
 /* Footer full width */
 footer {
     width: 100%;
