@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mustafa Harun Sendur - Portfolio</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Mustafa Harun Sendur — data scientist and software engineer building analytics, ML, and production data systems end to end. MSc Data Science, University of St Andrews.">
+    <meta property="og:title" content="Mustafa Harun Sendur — Portfolio">
+    <meta property="og:description" content="Data scientist and software engineer building analytics, ML, and production data systems end to end.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mhsendur.com">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mustafa Harun Sendur — Portfolio">
+    <meta name="twitter:description" content="Data scientist and software engineer building analytics, ML, and production data systems end to end.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a href="#welcome" class="skip-link">Skip to main content</a>
   <svg style="position: absolute; width: 0; height: 0;">
     <defs>
         <filter id="goo">
@@ -28,12 +41,10 @@
     
     <nav>
         <ul>
-            <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#activities">Leadership</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#education">Education</a></li>
 
             <li><a href="#" onclick="window.location.href = 'mailto:' + 'sendurharun' + '@' + 'gmail.com'">Contact</a></li>
         </ul>
@@ -47,13 +58,12 @@
                 <div class="welcome-text">
                     <h1>Welcome.</h1>
                     <div class="highlight-bar"></div>
-                    <p>I’m Mustafa Harun Sendur, an Applied ML / Data Scientist with strong software engineering foundations. I build and deploy applied ML and analytics systems end-to-end, from data collection and feature engineering to modelling, deployment, and monitoring. I’m currently completing an MSc in Data Science at the University of St Andrews.</p>
+                    <p>Data scientist with software engineering foundations and experience building analytics and ML systems end to end. Experienced in behavioural data analysis, SQL and Python workflows, and cloud-based pipelines, including production analytics for mobile products, operational dashboards at scale, and deployed ML. Completing an MSc in Data Science at the University of St Andrews.</p>
                     <div class="expertise-tags">
                         <span>Applied Machine Learning</span>
-                        <span>Product & Behavioural Analytics</span>
-                        <span>Data Pipelines (Azure/GCP)</span>
+                        <span>Product &amp; Behavioural Analytics</span>
+                        <span>Data Pipelines &amp; Cloud</span>
                     </div>
-                    <p>Recent work includes shipping mobile products with on-device behavioural analytics (SQLite) and improving performance through asynchronous pipelines and storage optimisation (25% faster cold-start; &gt;99.5% crash-free on iOS/Android). I’ve also built Azure operational dashboards (KQL) monitoring patch compliance at 10,000+ VM scale, and deployed automated retraining workflows on Google Cloud Platform.</p>
                 </div>
                 <div class="welcome-visual">
                     <div class="tech-sphere">
@@ -64,8 +74,6 @@
                             <div class="lava-blob"></div>
                             <div class="lava-blob"></div>
                             <div class="lava-blob"></div>
-
-                            
                         </div>
                     </div>
                 </div>
@@ -73,89 +81,65 @@
         </div>
     </section>
     
-<!-- Education Section -->
-<section id="education" class="container">
-  <h2>Education</h2>
-
-  <div class="experience-entry">
-    <h3>University of St Andrews</h3>
-    <p><strong>MSc Data Science</strong></p>
-    <p>January 2026 – January 2027 (Expected) | St Andrews, United Kingdom</p>
-  </div>
-
-  <div class="experience-entry">
-    <h3>Sabancı University</h3>
-    <p><strong>BSc Computer Science and Engineering</strong></p>
-    <p>September 2021 – January 2025 | Istanbul, Turkey</p>
-    <p><strong>Honours:</strong> Dean’s Honour List</p>
-  </div>
-</section>
-
-
 <!-- Experience Section -->
 <section id="experience" class="container">
   <h2>Experience</h2>
 
-
-
-<!-- Unathi Studios Experience -->
+<!-- Unathi Studios -->
 <div class="experience-entry">
     <div class="tech-tags-container">
         <span class="tech-tag react">React Native</span>
         <span class="tech-tag typescript">TypeScript</span>
         <span class="tech-tag sqlite">SQLite</span>
     </div>
-    <h3>Co-Founder &amp; Founding Engineer – Unathi Studios</h3>
-    <p>February 2025 – Present | London, United Kingdom</p>
+    <h3>Co-Founder &amp; Founding Engineer &ndash; Unathi Studios</h3>
+    <p>February 2025 &ndash; Present | London, United Kingdom</p>
     <ul>
-        <li>Built and shipped production mobile apps with behavioural analytics, designing SQLite schemas and SQL aggregations to analyse longitudinal session data, retention, and user reflection patterns.</li>
-        <li>Designed asynchronous pipelines and storage optimisations enabling exports and retention modelling, reducing cold-start time by <strong>25%</strong> and maintaining <strong>&gt;99.5%</strong> crash-free sessions on iOS/Android.</li>
-        <li>Delivered end-to-end product features (journaling, drawing input, voice capture, session tracking) with emphasis on reliability, performance, and clean UX on low-power devices.</li>
+        <li>Co-founded a studio shipping production mobile apps; analytics, local data, and product iteration.</li>
+        <li>Experiments and performance work across iOS and Android.</li>
     </ul>
-</div> 
+</div>
     
-<!-- OneStream Software Experience -->
+<!-- OneStream Software -->
 <div class="experience-entry">
     <div class="tech-tags-container">
         <span class="tech-tag azure">Azure</span>
         <span class="tech-tag kql">KQL</span>
     </div>
-    <h3>Cloud Operations Intern - OneStream Software</h3>
-    <p>July 2024 – September 2024 | London, United Kingdom</p>
+    <h3>Cloud Operations Intern &ndash; OneStream Software</h3>
+    <p>July 2024 &ndash; September 2024 | London, United Kingdom</p>
     <ul>
-        <li>Developed real-time operational dashboards using <strong>Azure Log Analytics (KQL)</strong> to monitor health and patch compliance across <strong>10,000+</strong> virtual machines.</li>
-        <li>Deployed and managed cloud infrastructure and databases across test and production environments using <strong>SQL Server, Terraform, and PowerShell</strong>.</li>
-        <li>Integrated signals across Azure Monitor and internal tooling to surface actionable operational insights and reduce manual monitoring effort.</li>
+        <li>Built operational dashboards in Azure (KQL/SQL) for fleet health and compliance visibility.</li>
+        <li>Cloud infra, databases, and scripting across test and production.</li>
     </ul>
 </div>
 
-  <!-- TUBITAK Experience -->
+  <!-- TUBITAK -->
   <div class="experience-entry">
       <div class="tech-tags-container">
           <span class="tech-tag solidity">Solidity</span>
           <span class="tech-tag javascript">JavaScript</span>
       </div>
-      <h3>Intern at Blockchain Laboratory - TUBITAK</h3>
-      <p>January 2023 – February 2023 | Kocaeli, Turkey</p>
+      <h3>Blockchain Intern &ndash; TUBITAK</h3>
+      <p>January 2023 &ndash; February 2023 | Kocaeli, Turkey</p>
       <ul>
-          <li>Built components of an NFT marketplace using <strong>React, Node.js, and Solidity</strong>, integrating smart contracts and deployment pipelines.</li>
-          <li>Explored cryptographic and blockchain-based systems including <strong>multi-party computation (MPC)</strong> and asymmetric encryption concepts.</li>
+          <li>Contributed to an NFT marketplace stack (React, Node, Solidity).</li>
+          <li>Research-oriented work on blockchain and applied cryptography.</li>
       </ul>
   </div>
   
-  <!-- Vachell Experience -->
+  <!-- Vachell -->
   <div class="experience-entry">
       <div class="tech-tags-container">
           <span class="tech-tag react">React</span>
           <span class="tech-tag nodejs">Node.js</span>
-          <span class="tech-tag express">Express</span>
           <span class="tech-tag mongodb">MongoDB</span>
       </div>
-      <h3>Full-Stack Engineer - Vachell</h3>
-      <p>April 2022 – December 2023 | Istanbul, Turkey</p>
+      <h3>Full-Stack Engineer &ndash; Vachell</h3>
+      <p>April 2022 &ndash; December 2023 | Istanbul, Turkey</p>
       <ul>
-          <li>Engineered and deployed a scalable web platform using <strong>React, Node.js, and MongoDB</strong>, supporting real-time user interactions.</li>
-          <li>Integrated usage analytics and iterated on UX, increasing user engagement by <strong>25%</strong>.</li>
+          <li>Full-stack web platform (React, Node, MongoDB).</li>
+          <li>Used product and usage signals to guide UX iteration.</li>
       </ul>
   </div>
 </section>
@@ -165,245 +149,199 @@
 <section id="projects" class="container">
   <h2>Projects</h2>
 
-  <!-- Real Estate Recommender Twitter Bot Project -->
-<div class="project-entry">
-    <div class="tech-tags-container">
-        <span class="tech-tag python">Python</span>
-    </div>
-    <h3>Real Estate Recommender Twitter Bot</h3>
-    <p>Built an ML-driven recommendation system analysing <strong>45,000+</strong> real estate listings, automating data collection and feature pipelines to identify undervalued properties and publish results via an automated workflow.</p>
-    <p><a href="https://github.com/mhsendur/RealEstateTweetBot" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
-</div>
-
-      <!-- PistachioHut – E-Commerce Platform Project -->
+  <!-- SelfMeditate -->
   <div class="project-entry">
       <div class="tech-tags-container">
-          <span class="tech-tag python">Python</span>
-          <span class="tech-tag flask">Flask</span>
-          <span class="tech-tag react">React</span>
-          <span class="tech-tag firebase">Firebase</span>
+          <span class="tech-tag react">React Native</span>
+          <span class="tech-tag typescript">TypeScript</span>
+          <span class="tech-tag sqlite">SQLite</span>
       </div>
-      <h3>PistachioHut – E-Commerce Platform</h3>
-      <p>Built a full-stack e-commerce platform with React (frontend) and Flask (backend), delivering secure authentication, product browsing, and order flows via REST APIs and a cloud database.</p>
-      <p><a href="https://github.com/mhsendur/PistachioHut-OnlineStore" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
+      <h3>SelfMeditate &ndash; Meditation &amp; Journaling App</h3>
+      <p>React Native meditation and journaling app with local-first storage, session tracking, and insights. iOS and Android.</p>
+      <p><a href="https://apps.apple.com/us/app/selfmeditate-meditation-timer/id6757534578" target="_blank" rel="noopener noreferrer">App Store</a></p>
   </div>
 
-  <!-- Low-Latency Trading System Simulator Project -->
-  <div class="project-entry">
-      <div class="tech-tags-container">
-          <span class="tech-tag cpp">C</span>
-      </div>
-      <h3>Low-Latency Trading System Simulator</h3>
-      <p>Implemented a simulation of a low-latency order matching engine to evaluate performance trade-offs (price/time priority, order book updates, throughput/latency considerations) without real trading.</p>
-      <p><a href="https://github.com/mhsendur/LowLatencyTradingSystem" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
-  </div>
-
-  <!-- Real-Time Stock Price Tracker Project -->
+  <!-- Real Estate Recommender -->
   <div class="project-entry">
       <div class="tech-tags-container">
           <span class="tech-tag python">Python</span>
       </div>
-      <h3>Real-Time Stock Price Tracker</h3>
-      <p>Built a Python desktop app that streams live market data, visualises trends, and manages watchlists with a searchable UI (tkinter + market data API).</p>
-      <p><a href="https://github.com/mhsendur/StockPriceTracker" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
+      <h3>Real Estate Recommender</h3>
+      <p>Built an ML-driven recommendation system analysing <strong>45,000+</strong> real estate listings, automating data collection, feature engineering, and prediction pipelines to identify undervalued properties. Achieved <strong>R&sup2; = 0.91</strong> with automated daily retraining deployed on GCP.</p>
+      <p><a href="https://github.com/mhsendur/RealEstateTweetBot" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
   </div>
-  
 
-  <!-- ChatGPT Grade Predictor Project -->
-  <div class="project-entry">
-      <div class="tech-tags-container">
-          <span class="tech-tag python">Python</span>
-      </div>
-      <h3>ChatGPT Grade Predictor</h3>
-      <p>Built an NLP pipeline using <strong>TF-IDF</strong> and sentiment features with <strong>Random Forest regression</strong> to predict grading outcomes from text and interaction signals.</p>
-      <p><a href="https://github.com/mhsendur/ChatGPT-Grade-Predictor" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
-  </div>
-  
-  <!-- TurfMind Project -->
+  <!-- TurfMind -->
   <div class="project-entry">
       <div class="tech-tags-container">
           <span class="tech-tag python">Python</span>
           <span class="tech-tag django">Django</span>
           <span class="tech-tag javascript">JavaScript</span>
       </div>
-      <h3>TurfMind – Football Statistics Platform</h3>
-      <p>Analysed <strong>30,000+</strong> matches across 10 seasons, building an interactive platform with a Django REST backend and JavaScript visualisations to explore performance trends.</p>
+      <h3>TurfMind &ndash; Football Statistics Platform</h3>
+      <p>Analysed <strong>30,000+</strong> matches across 10 seasons, building interactive visualisations using Python and Chart.js to explore performance trends, with a Django REST backend serving the data.</p>
       <p><a href="https://github.com/mhsendur/TurfMind-football-stats-coaching" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
-      </div>
-  
-  <!-- DisasterPrep App Project -->
-  <div class="project-entry">
-      <div class="tech-tags-container">
-          <span class="tech-tag java">Java</span>
-          <span class="tech-tag spring">Spring</span>
-          <span class="tech-tag docker">Docker</span>
-          <span class="tech-tag mongodb">MongoDB</span>
-      </div>
-      <h3>DisasterPrep - Natural Disaster Preparedness App</h3>
-      <p>Built a full-stack preparedness app with Spring (Java) and MongoDB, containerised with Docker, delivering checklists, resources, and emergency planning features.</p>
-      <p><a href="https://github.com/mhsendur/DisasterPrep" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
   </div>
-  
-  <!-- Comparative Education Index Predictor Project -->
+
+  <!-- Comparative Education Index Predictor -->
   <div class="project-entry">
       <div class="tech-tags-container">
           <span class="tech-tag python">Python</span>
       </div>
       <h3>Comparative Education Index Predictor</h3>
-      <p>Built a supervised learning model to predict regional education indices from collected and engineered features, achieving <strong>R² = 0.98</strong>, with clear visualisations and reproducible preprocessing.</p>
+      <p>Built a supervised learning model to predict regional education indices from collected and engineered features, achieving <strong>R&sup2; = 0.98</strong>, with clear visualisations and reproducible preprocessing.</p>
       <p><a href="https://github.com/mhsendur/Education-Index-in-Turkey-Before-and-After" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
   </div>
 
-  <!-- TSP-Solver Project -->
-<div class="project-entry">
-    <div class="tech-tags-container">
-        <span class="tech-tag cpp">C++</span>
+  <div class="projects-more">
+    <button type="button" class="other-projects-toggle" id="otherProjectsToggle" aria-expanded="false">Show more projects</button>
+  </div>
+
+  <div id="otherProjects" class="other-projects">
+
+    <!-- kAiDB -->
+    <div class="project-entry">
+        <div class="tech-tags-container">
+            <span class="tech-tag python">Python</span>
+            <span class="tech-tag mongodb">MongoDB</span>
+        </div>
+        <h3>kAiDB</h3>
+        <p>Designed and implemented a database-backed system for managing member profiles and events for a student AI/ML community.</p>
+        <p><a href="https://github.com/mhsendur/kAiDB" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
     </div>
-    <h3>TSP-Solver</h3>
-    <p>Implemented a TSP (Traveling Salesman Problem) solver using the GRASP (Greedy Randomised Adaptive Search Procedure) algorithm with swap-based local search to optimise route finding.</p>
-    <p><a href="https://github.com/mhsendur/TSP-Solver" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
-</div>
 
-<!-- kAiDB Project -->
-<div class="project-entry">
-    <div class="tech-tags-container">
-        <span class="tech-tag python">Python</span>
-        <span class="tech-tag mongodb">MongoDB</span>
+    <!-- PistachioHut -->
+    <div class="project-entry">
+        <div class="tech-tags-container">
+            <span class="tech-tag python">Python</span>
+            <span class="tech-tag flask">Flask</span>
+            <span class="tech-tag react">React</span>
+        </div>
+        <h3>PistachioHut &ndash; E-commerce Platform</h3>
+        <p>Built a full-stack e-commerce platform with React and Flask, delivering secure authentication, product browsing, and order flows via REST APIs.</p>
+        <p><a href="https://github.com/mhsendur/PistachioHut-OnlineStore" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
     </div>
-    <h3>kAiDB</h3>
-    <p>Designed and implemented a database-backed system for managing member profiles and events, improving operational workflows for a student AI/ML community.</p>
-    <p><a href="https://github.com/mhsendur/kAiDB" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
-</div>
 
-</section>
+    <!-- Low-Latency Trading System Simulator -->
+    <div class="project-entry">
+        <div class="tech-tags-container">
+            <span class="tech-tag cpp">C</span>
+        </div>
+        <h3>Low-Latency Trading System Simulator</h3>
+        <p>Simulated a low-latency order matching engine to evaluate price/time priority, order book updates, and throughput/latency trade-offs.</p>
+        <p><a href="https://github.com/mhsendur/LowLatencyTradingSystem" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
+    </div>
 
+    <!-- Stock Price Tracker -->
+    <div class="project-entry">
+        <div class="tech-tags-container">
+            <span class="tech-tag python">Python</span>
+        </div>
+        <h3>Real-time Stock Price Tracker</h3>
+        <p>Built a Python desktop app that streams live market data, visualises trends, and manages watchlists.</p>
+        <p><a href="https://github.com/mhsendur/StockPriceTracker" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
+    </div>
 
-<!-- Activities Section -->
-<section id="activities" class="container">
-  <h2>Leadership & Activities</h2>
-  
-  <!-- British Computer Society (BCS) Activity -->
-  <div class="activity-entry">
-      <h3>Committee Member - British Computer Society (BCS) London Central Branch</h3>
-      <p>July 2022 – Present | London, United Kingdom</p>
-      <ul>
-          <li>Committee member supporting programme planning and community engagement for the London Central Branch.</li>
-          <li>Contribute to event organisation and speaker sourcing; engage with practitioners on software, data, and emerging tech topics.</li>
-      </ul>
-  </div>
+    <!-- ChatGPT Grade Predictor -->
+    <div class="project-entry">
+        <div class="tech-tags-container">
+            <span class="tech-tag python">Python</span>
+        </div>
+        <h3>ChatGPT Grade Predictor</h3>
+        <p>Built an NLP pipeline using TF-IDF and sentiment features with Random Forest regression to predict grading outcomes.</p>
+        <p><a href="https://github.com/mhsendur/ChatGPT-Grade-Predictor" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
+    </div>
 
-  <!-- Zooniverse Platform Volunteer Experience -->
-<div class="activity-entry">
-    <h3>Volunteer - Zooniverse</h3>
-    <p>August 2024 – August 2024 | Remote</p>
-    <ul>
-        <li>Contributed to citizen-science projects by labelling and classifying datasets to support research quality and throughput.</li>
-    </ul>
-</div>
+    <!-- DisasterPrep -->
+    <div class="project-entry">
+        <div class="tech-tags-container">
+            <span class="tech-tag java">Java</span>
+            <span class="tech-tag spring">Spring</span>
+            <span class="tech-tag docker">Docker</span>
+        </div>
+        <h3>DisasterPrep</h3>
+        <p>Built a full-stack preparedness app with Spring (Java) and MongoDB, containerised with Docker.</p>
+        <p><a href="https://github.com/mhsendur/DisasterPrep" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
+    </div>
 
-      <!-- Audiobook Production Activity -->
-  <div class="activity-entry">
-      <h3>Audiobook Producer - Sabanci University Civic Involvement Projects</h3>
-      <p>September 2021 – January 2022 | Istanbul, Turkey</p>
-      <ul>
-          <li>Contributed to the production of educational audiobook, engaging in narration and audio editing tasks.</li>
-          <li>Enhanced the accessibility of learning materials for individuals with visual impairments.</li>
-      </ul>
-  </div>
+    <!-- TSP Solver -->
+    <div class="project-entry">
+        <div class="tech-tags-container">
+            <span class="tech-tag cpp">C++</span>
+        </div>
+        <h3>TSP-Solver</h3>
+        <p>Implemented a TSP solver using GRASP with swap-based local search to optimise route finding.</p>
+        <p><a href="https://github.com/mhsendur/TSP-Solver" target="_blank" rel="noopener noreferrer">Project Repository</a></p>
+    </div>
 
-  <!-- Volunteering Activity -->
-  <div class="activity-entry">
-      <h3>Volunteer - Turkish Red Crescent Association</h3>
-      <p>June 2018 – June 2019 | Istanbul, Turkey</p>
-      <ul>
-          <li>Participated in community service activities including blood donation campaigns and school aid programs.</li>
-          <li>Supported the organisation's efforts in providing assistance to nursing homes and distributing aid during emergencies.</li>
-      </ul>
-  </div>
-  
-  <!-- Tutoring Activity -->
-  <div class="activity-entry">
-      <h3>Mathematics Tutor - Bilgi Evi</h3>
-      <p>September 2018 – October 2018 | Istanbul, Turkey</p>
-      <ul>
-          <li>Provided volunteer tutoring in mathematics to primary school students, adapting teaching methods to individual learning styles.</li>
-          <li>Contributed to the academic development of students through personalised instruction and support.</li>
-      </ul>
   </div>
 </section>
 
 
 <!-- Skills Section -->
 <section id="skills" class="container">
-  <h2>Tech Stack</h2>
-  
-    <!-- Technical Skills -->
-    <div class="skills-entry">
-        <h3>Technical Skills</h3>
-    
-    <p><strong>Programming Languages:</strong></p>
-    <ul>
-        <li>Python, SQL, TypeScript/JavaScript, KQL, Java, C/C++</li>
-    </ul>
-    
-    <p><strong>Frameworks & Libraries:</strong></p>
-    <ul>
-        <li>scikit-learn, Pandas/NumPy, React/React Native, Node.js, Django REST, Spring</li>
-    </ul>
-    
-    <p><strong>Database Management:</strong></p>
-    <ul>
-        <li>PostgreSQL, SQLite, MongoDB</li>
-    </ul>
-    
-    <p><strong>Cloud & DevOps:</strong></p>
-    <ul>
-        <li>Azure, GCP, Docker, Terraform, PowerShell, Git</li>
-    </ul>
-    
-    <p><strong>Other Tools & Technologies:</strong></p>
-    <ul>
-        <li>Model evaluation, experimentation/analytics, Chart.js, Matplotlib</li>
-    </ul>
-    </div>
-  
-  <!-- Language Skills -->
+  <h2>Skills</h2>
+
+  <div class="skills-entry skills-categories">
+      <div class="skill-group">
+          <h3 class="skill-group-label">Data &amp; Analytics</h3>
+          <div class="skill-pills">
+              <span>Python</span><span>SQL</span><span>Pandas</span><span>NumPy</span><span>scikit-learn</span><span>Statistics</span><span>Data visualisation</span><span>Experimentation</span><span>A/B Testing</span><span>Behavioural Analytics</span><span>KQL</span>
+          </div>
+      </div>
+      <div class="skill-group">
+          <h3 class="skill-group-label">Languages &amp; frameworks</h3>
+          <div class="skill-pills">
+              <span>TypeScript</span><span>JavaScript</span><span>React</span><span>React Native</span><span>Node.js</span><span>Git</span>
+          </div>
+      </div>
+      <div class="skill-group">
+          <h3 class="skill-group-label">Cloud &amp; Databases</h3>
+          <div class="skill-pills">
+              <span>SQLite</span><span>PostgreSQL</span><span>MongoDB</span><span>Azure</span><span>GCP</span><span>Docker</span>
+          </div>
+      </div>
+  </div>
+
   <div class="skills-entry">
       <h3>Languages</h3>
-      <ul>
-          <li>English (native), Turkish (native)</li>
-          <li>German (intermediate), French (intermediate)</li>
-      </ul>
+      <p>English (native), Turkish (native), German (intermediate), French (intermediate)</p>
   </div>
 </section>
 
-<!-- Certifications Section -->
-<section id="certifications" class="container">
-    <h2>Certifications</h2>
-    
-    <!-- Back-End Development Certification -->
-    <div class="project-entry">
-        <h3>Introduction to Back-End Development</h3>
-        <p>Issued by Meta | December 2023</p>
-        <p><a href="https://www.coursera.org/account/accomplishments/verify/5BM7PVQEJAZY" target="_blank" rel="noopener noreferrer">Show Credential</a></p>
-    </div>
-    
-    <!-- Front-End Development Certification -->
-    <div class="project-entry">
-        <h3>Introduction to Front-End Development</h3>
-        <p>Issued by Meta | July 2023</p>
-        <p><a href="https://www.coursera.org/account/accomplishments/verify/XJJ8SKBCUX5J" target="_blank" rel="noopener noreferrer">Show Credential</a></p>
-    </div>
-    
-    <!-- Microsoft Excel Programme Certification -->
-    <div class="project-entry">
-        <h3>Microsoft Certified Excel Programme</h3>
-        <p>Issued by The Unitech Bilgisayar Eğitim Merkezi | February 2022</p>
-    </div>
+
+<!-- Education Section -->
+<section id="education" class="container">
+  <h2>Education</h2>
+
+  <div class="experience-entry">
+    <h3>University of St Andrews</h3>
+    <p><strong>MSc Data Science</strong></p>
+    <p>January 2026 &ndash; January 2027 (Expected) | St Andrews, United Kingdom</p>
+  </div>
+
+  <div class="experience-entry">
+    <h3>Sabanc&#305; University</h3>
+    <p><strong>BSc Computer Science and Engineering</strong></p>
+    <p>September 2021 &ndash; January 2025 | Istanbul, Turkey</p>
+    <p><strong>Honours:</strong> Dean's Honour List</p>
+  </div>
 </section>
 
 
-<!-- Footer Section -->
+<!-- Leadership Section -->
+<section id="activities" class="container">
+  <h2>Leadership &amp; Activities</h2>
+  
+  <div class="activity-entry">
+      <h3>Committee Member &ndash; British Computer Society (BCS) London Central Branch</h3>
+      <p>July 2022 &ndash; Present | London, United Kingdom</p>
+      <p>Supporting programme planning and community engagement. Contribute to event organisation, speaker sourcing, and discussions on software, data, and emerging tech topics.</p>
+  </div>
+</section>
+
+
+<!-- Footer -->
 <footer>
   <div class="container">
     <div class="footer-content">
@@ -415,13 +353,13 @@
           </ul>
       </div>
       <div class="footer-bottom">
-          <p>&copy; 2024 Mustafa Harun Sendur. All rights reserved.</p>
+          <p>&copy; 2026 Mustafa Harun Sendur. All rights reserved.</p>
       </div>
   </div>
 </footer>
 
 <!-- Theme Toggle Button -->
-<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+<button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <circle cx="12" cy="12" r="5"/>
         <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
@@ -429,18 +367,14 @@
 </button>
 
 <script>
-// Theme Toggle functionality
 const themeToggle = document.getElementById('themeToggle');
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-// Check for saved theme preference or default to user's system preference
 const currentTheme = localStorage.getItem('theme') || 
     (prefersDarkScheme.matches ? 'dark' : 'light');
 
-// Apply the current theme
 document.documentElement.setAttribute('data-theme', currentTheme);
 
-// Toggle theme when button is clicked
 themeToggle.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
@@ -449,11 +383,19 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', newTheme);
 });
 
-// Update theme when system preference changes
 prefersDarkScheme.addEventListener('change', (e) => {
     const newTheme = e.matches ? 'dark' : 'light';
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
+});
+
+document.getElementById('otherProjectsToggle').addEventListener('click', function() {
+    const container = document.getElementById('otherProjects');
+    container.classList.toggle('expanded');
+    this.textContent = container.classList.contains('expanded')
+        ? 'Show less'
+        : 'Show more projects';
+    this.setAttribute('aria-expanded', container.classList.contains('expanded'));
 });
 </script>
 
