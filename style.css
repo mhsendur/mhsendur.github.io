@@ -73,6 +73,44 @@ p, li { color: var(--text-secondary); }
 a { color: var(--link-color); transition: color 0.2s ease; }
 a:hover { color: var(--link-hover); }
 
+/* Text selection — pale gold (light) vs electric violet (dark); explicit hex for Safari */
+*::selection {
+    background-color: #fde68a;
+    color: #1c1917;
+}
+
+*::-moz-selection {
+    background-color: #fde68a;
+    color: #1c1917;
+}
+
+html[data-theme="dark"] *::selection {
+    background-color: rgba(167, 139, 250, 0.52);
+    color: #faf5ff;
+}
+
+html[data-theme="dark"] *::-moz-selection {
+    background-color: rgba(167, 139, 250, 0.52);
+    color: #faf5ff;
+}
+
+/* Footer strip: teal glass so it’s distinct on dark background */
+footer *::selection {
+    background-color: rgba(45, 212, 191, 0.48);
+    color: #ffffff;
+}
+
+footer *::-moz-selection {
+    background-color: rgba(45, 212, 191, 0.48);
+    color: #ffffff;
+}
+
+html[data-theme="dark"] footer *::selection,
+html[data-theme="dark"] footer *::-moz-selection {
+    background-color: rgba(45, 212, 191, 0.48);
+    color: #ffffff;
+}
+
 /* --- Accessibility: keyboard focus & skip link ------------- */
 .skip-link {
     position: absolute;
