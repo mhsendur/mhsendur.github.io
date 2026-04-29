@@ -426,6 +426,56 @@ header nav ul li a.current {
     border-color: var(--border-color);
 }
 
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+    align-items: center;
+}
+
+.hero-actions a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.88em;
+    letter-spacing: 0.04em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.primary-button {
+    background: var(--accent-color);
+    color: var(--bg-primary);
+    border: 1px solid var(--accent-color);
+    box-shadow: var(--card-shadow);
+}
+
+.primary-button:hover {
+    color: var(--bg-primary);
+    transform: translateY(-1px);
+    box-shadow: var(--card-shadow-hover);
+    filter: brightness(1.05);
+}
+
+[data-theme="dark"] .primary-button {
+    color: #0e0e11;
+}
+
+.secondary-button {
+    background: var(--card-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+}
+
+.secondary-button:hover {
+    color: var(--text-primary);
+    border-color: var(--accent-color);
+    transform: translateY(-1px);
+    box-shadow: var(--card-shadow-hover);
+}
+
 /* --- Lava Sphere ------------------------------------------- */
 .tech-sphere {
     width: 380px;
@@ -718,6 +768,9 @@ header nav ul li a.current {
 .tech-tag.docker      { background-color: #3e6d94; }
 .tech-tag.django      { background-color: #2e7a6b; }
 .tech-tag.cpp         { background-color: #6b4f7a; }
+.tech-tag.sql         { background-color: #2d6a7a; }
+.tech-tag.analytics   { background-color: #6b5344; }
+.tech-tag.gcp         { background-color: #3d5a80; }
 
 .tech-tag:hover { transform: translateY(-1px); }
 
